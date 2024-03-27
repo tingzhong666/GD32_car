@@ -21,18 +21,24 @@ Target DLL:      CMSIS_AGDI.dll V1.33.0.0
 Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
-d:\development\workspace\vscode.keil5\GD32_car\Project\main.uvprojx
+d:\development\workspace_code\vscode.keil5\GD32_car\Project\main.uvprojx
 Project File Date:  03/27/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\apps\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-compiling main.c...
 compiling auto_track.c...
+compiling main.c...
+compiling bluetooth.c...
+..\User\bluetooth.c(57): warning:  #223-D: function "task_auto_track_switch_set" declared implicitly
+              task_auto_track_switch_set(SET);
+..\User\bluetooth.c(61): warning:  #223-D: function "task_auto_track_switch_set" declared implicitly
+              task_auto_track_switch_set(RESET);
+..\User\bluetooth.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=9548 RO-data=524 RW-data=36 ZI-data=2044  
+Program Size: Code=9640 RO-data=524 RW-data=40 ZI-data=2040  
 FromELF: creating hex file...
-".\Objects\main.axf" - 0 Error(s), 0 Warning(s).
+".\Objects\main.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 

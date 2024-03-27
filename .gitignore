@@ -1,2 +1,6 @@
 *.log
 *.log.lock
+Project/.vscode/uv4.log
+Project/.vscode/uv4.log.lock
+Project/Listings
+Project/Objects

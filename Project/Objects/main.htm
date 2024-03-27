@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\main.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\main.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Wed Mar 27 16:52:05 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Wed Mar 27 21:31:29 2024
 <BR><P>
 <H3>Maximum Stack Usage =        232 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -133,7 +133,7 @@ Global Symbols
 <P><STRONG><a name="[65]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f450_470.o(.text)
 </UL>
-<P><STRONG><a name="[cc]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+<P><STRONG><a name="[cd]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
 
 <P><STRONG><a name="[6c]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
@@ -143,17 +143,17 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
-<P><STRONG><a name="[cd]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+<P><STRONG><a name="[ce]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
 
-<P><STRONG><a name="[ce]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+<P><STRONG><a name="[cf]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
 
-<P><STRONG><a name="[cf]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+<P><STRONG><a name="[d0]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
 
-<P><STRONG><a name="[d0]"></a>__rt_lib_shutdown_fini</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry12b.o(.ARM.Collect$$$$0000000E))
+<P><STRONG><a name="[d1]"></a>__rt_lib_shutdown_fini</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry12b.o(.ARM.Collect$$$$0000000E))
 
-<P><STRONG><a name="[d1]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000F))
+<P><STRONG><a name="[d2]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000F))
 
-<P><STRONG><a name="[d2]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$00000011))
+<P><STRONG><a name="[d3]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$00000011))
 
 <P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_gd32f450_470.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f450_470.o(RESET)
@@ -422,9 +422,9 @@ Global Symbols
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 
-<P><STRONG><a name="[d3]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[d4]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
-<P><STRONG><a name="[d4]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[d5]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[6e]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
@@ -432,9 +432,9 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_dmaRX
 </UL>
 
-<P><STRONG><a name="[d5]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[d6]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
-<P><STRONG><a name="[d6]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[d7]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[70]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
@@ -472,7 +472,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__vfscanf
 </UL>
 
-<P><STRONG><a name="[d7]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+<P><STRONG><a name="[d8]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
 
 <P><STRONG><a name="[80]"></a>__aeabi_uidivmod</STRONG> (Thumb, 44 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
 <BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
@@ -502,7 +502,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
 </UL>
 
-<P><STRONG><a name="[d8]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+<P><STRONG><a name="[d9]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
 <P><STRONG><a name="[69]"></a>isspace</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, isspace_c.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ctype_lookup
@@ -595,20 +595,20 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[d9]"></a>__1printf$3</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf3.o(i.__0printf$3), UNUSED)
+<P><STRONG><a name="[da]"></a>__1printf$3</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf3.o(i.__0printf$3), UNUSED)
 
-<P><STRONG><a name="[a3]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf3.o(i.__0printf$3))
+<P><STRONG><a name="[a4]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf3.o(i.__0printf$3))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_dmaRX
 </UL>
 
-<P><STRONG><a name="[da]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<P><STRONG><a name="[db]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
 
-<P><STRONG><a name="[db]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+<P><STRONG><a name="[dc]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
 
-<P><STRONG><a name="[dc]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P><STRONG><a name="[dd]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
 <P><STRONG><a name="[81]"></a>bluetooth_init</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, bluetooth.o(i.bluetooth_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = bluetooth_init
@@ -627,10 +627,10 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bluetooth_msg_handler
 </UL>
 
-<P><STRONG><a name="[6b]"></a>bluetooth_msg_handler</STRONG> (Thumb, 134 bytes, Stack size 16 bytes, bluetooth.o(i.bluetooth_msg_handler))
+<P><STRONG><a name="[6b]"></a>bluetooth_msg_handler</STRONG> (Thumb, 180 bytes, Stack size 16 bytes, bluetooth.o(i.bluetooth_msg_handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = bluetooth_msg_handler &rArr; __0sscanf &rArr; __vfscanf_char &rArr; __vfscanf &rArr; _scanf_int
 </UL>
-<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_auto_track_switch_set
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bluetooth_msgToCmd
 <LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_stop
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_right
@@ -639,127 +639,128 @@ Global Symbols
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_brake
 <LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_backward
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0sscanf
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> bluetooth.o(i.bluetooth_init)
 </UL>
-<P><STRONG><a name="[8d]"></a>bsp_io_init</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, pwm.o(i.bsp_io_init))
+<P><STRONG><a name="[8e]"></a>bsp_io_init</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, pwm.o(i.bsp_io_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = bsp_io_init &rArr; gpio_output_options_set
 </UL>
-<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_output_options_set
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_mode_set
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_af_set
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
+<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_output_options_set
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_mode_set
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_af_set
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_init
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_init
 </UL>
 
-<P><STRONG><a name="[92]"></a>bsp_pwm_dutyRatio_edit</STRONG> (Thumb, 124 bytes, Stack size 16 bytes, pwm.o(i.bsp_pwm_dutyRatio_edit))
+<P><STRONG><a name="[93]"></a>bsp_pwm_dutyRatio_edit</STRONG> (Thumb, 124 bytes, Stack size 16 bytes, pwm.o(i.bsp_pwm_dutyRatio_edit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = bsp_pwm_dutyRatio_edit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_pulse_value_config
+<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_pulse_value_config
 </UL>
 <BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_stop
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_right
 <LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_left
-<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_2
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_2
 <LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_brake
 <LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_backward
 </UL>
 
-<P><STRONG><a name="[94]"></a>bsp_pwm_init</STRONG> (Thumb, 94 bytes, Stack size 8 bytes, pwm.o(i.bsp_pwm_init))
+<P><STRONG><a name="[95]"></a>bsp_pwm_init</STRONG> (Thumb, 94 bytes, Stack size 8 bytes, pwm.o(i.bsp_pwm_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = bsp_pwm_init &rArr; bsp_io_init &rArr; gpio_output_options_set
 </UL>
-<BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_output_init
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_init
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_io_init
+<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_output_init
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_init
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_io_init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[95]"></a>bsp_timer_init</STRONG> (Thumb, 58 bytes, Stack size 32 bytes, pwm.o(i.bsp_timer_init))
+<P><STRONG><a name="[96]"></a>bsp_timer_init</STRONG> (Thumb, 58 bytes, Stack size 32 bytes, pwm.o(i.bsp_timer_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = bsp_timer_init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_timer_clock_prescaler_config
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_struct_para_init
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_init
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_enable
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_auto_reload_shadow_enable
+<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_timer_clock_prescaler_config
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_struct_para_init
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_init
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_enable
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_auto_reload_shadow_enable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_init
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_init
 </UL>
 
-<P><STRONG><a name="[96]"></a>bsp_timer_output_init</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, pwm.o(i.bsp_timer_output_init))
+<P><STRONG><a name="[97]"></a>bsp_timer_output_init</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, pwm.o(i.bsp_timer_output_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = bsp_timer_output_init &rArr; timer_channel_output_config
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_struct_para_init
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_shadow_config
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_pulse_value_config
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_mode_config
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_config
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_struct_para_init
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_shadow_config
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_pulse_value_config
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_mode_config
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_config
 </UL>
-<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_init
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_init
 </UL>
 
-<P><STRONG><a name="[ca]"></a>bsp_tracking_flag</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, tracking.o(i.bsp_tracking_flag))
-<BR><BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_auto_track
+<P><STRONG><a name="[cb]"></a>bsp_tracking_flag</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, tracking.o(i.bsp_tracking_flag))
+<BR><BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_auto_track
 </UL>
 
 <P><STRONG><a name="[7d]"></a>bsp_uart_dmaRX</STRONG> (Thumb, 136 bytes, Stack size 16 bytes, uart.o(i.bsp_uart_dmaRX))
 <BR><BR>[Stack]<UL><LI>Max Depth = 180<LI>Call Chain = bsp_uart_dmaRX &rArr; bsp_uart_init_ &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_transfer_number_get
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_deinit
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_channel_enable
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_channel_disable
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_flag_get
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_flag_clear
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_data_receive
+<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_transfer_number_get
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_deinit
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_channel_enable
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_channel_disable
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_flag_get
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_flag_clear
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_data_receive
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_print_set
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_print_set
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_IRQHandler
 <LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART0_IRQHandler
 </UL>
 
-<P><STRONG><a name="[aa]"></a>bsp_uart_init</STRONG> (Thumb, 188 bytes, Stack size 8 bytes, uart.o(i.bsp_uart_init))
+<P><STRONG><a name="[ab]"></a>bsp_uart_init</STRONG> (Thumb, 188 bytes, Stack size 8 bytes, uart.o(i.bsp_uart_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 172<LI>Call Chain = bsp_uart_init &rArr; bsp_uart_init_ &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
 </UL>
 <BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[a7]"></a>bsp_uart_init_</STRONG> (Thumb, 268 bytes, Stack size 48 bytes, uart.o(i.bsp_uart_init_))
+<P><STRONG><a name="[a8]"></a>bsp_uart_init_</STRONG> (Thumb, 268 bytes, Stack size 48 bytes, uart.o(i.bsp_uart_init_))
 <BR><BR>[Stack]<UL><LI>Max Depth = 164<LI>Call Chain = bsp_uart_init_ &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_output_options_set
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_mode_set
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_af_set
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_irq_enable
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_single_data_para_struct_init
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_single_data_mode_init
-<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_channel_subperipheral_select
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_channel_enable
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_word_length_set
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_transmit_config
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_stop_bit_set
-<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_receive_config
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_parity_config
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_enable
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_enable
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_dma_receive_config
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_baudrate_set
+<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_output_options_set
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_mode_set
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_af_set
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_irq_enable
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_single_data_para_struct_init
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_single_data_mode_init
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_channel_subperipheral_select
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_channel_enable
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_word_length_set
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_transmit_config
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_stop_bit_set
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_receive_config
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_parity_config
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_enable
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_enable
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_dma_receive_config
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_baudrate_set
 </UL>
-<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init
+<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_dmaRX
 </UL>
 
-<P><STRONG><a name="[a2]"></a>bsp_uart_print_set</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, uart.o(i.bsp_uart_print_set))
+<P><STRONG><a name="[a3]"></a>bsp_uart_print_set</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, uart.o(i.bsp_uart_print_set))
 <BR><BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_dmaRX
 </UL>
@@ -772,7 +773,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = car_backward &rArr; car_stop &rArr; bsp_pwm_dutyRatio_edit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_stop
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_dutyRatio_edit
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_dutyRatio_edit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bluetooth_msg_handler
 </UL>
@@ -781,36 +782,36 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = car_brake &rArr; car_stop &rArr; bsp_pwm_dutyRatio_edit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_stop
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_dutyRatio_edit
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_dutyRatio_edit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bluetooth_msg_handler
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_auto_track
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_auto_track
 </UL>
 
 <P><STRONG><a name="[88]"></a>car_forward</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, car.o(i.car_forward))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = car_forward &rArr; car_stop &rArr; bsp_pwm_dutyRatio_edit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_stop
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_dutyRatio_edit
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_dutyRatio_edit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bluetooth_msg_handler
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_auto_track
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_auto_track
 </UL>
 
-<P><STRONG><a name="[b8]"></a>car_forward_2</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, car.o(i.car_forward_2))
+<P><STRONG><a name="[b9]"></a>car_forward_2</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, car.o(i.car_forward_2))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = car_forward_2 &rArr; car_stop &rArr; bsp_pwm_dutyRatio_edit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_stop
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_dutyRatio_edit
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_dutyRatio_edit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_auto_track
+<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_auto_track
 </UL>
 
 <P><STRONG><a name="[8a]"></a>car_left</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, car.o(i.car_left))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = car_left &rArr; car_stop &rArr; bsp_pwm_dutyRatio_edit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_stop
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_dutyRatio_edit
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_dutyRatio_edit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bluetooth_msg_handler
 </UL>
@@ -819,7 +820,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = car_right &rArr; car_stop &rArr; bsp_pwm_dutyRatio_edit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_stop
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_dutyRatio_edit
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_dutyRatio_edit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bluetooth_msg_handler
 </UL>
@@ -827,18 +828,18 @@ Global Symbols
 <P><STRONG><a name="[87]"></a>car_stop</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, car.o(i.car_stop))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = car_stop &rArr; bsp_pwm_dutyRatio_edit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_dutyRatio_edit
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_dutyRatio_edit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bluetooth_msg_handler
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_right
 <LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_left
-<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_2
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_2
 <LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_brake
 <LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_backward
 </UL>
 
-<P><STRONG><a name="[c5]"></a>delay_1ms</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, systick.o(i.delay_1ms))
+<P><STRONG><a name="[c6]"></a>delay_1ms</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, systick.o(i.delay_1ms))
 <BR><BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -846,42 +847,42 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
 </UL>
 
-<P><STRONG><a name="[a5]"></a>dma_channel_disable</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, gd32f4xx_dma.o(i.dma_channel_disable))
+<P><STRONG><a name="[a6]"></a>dma_channel_disable</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, gd32f4xx_dma.o(i.dma_channel_disable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = dma_channel_disable
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_dmaRX
 </UL>
 
-<P><STRONG><a name="[a8]"></a>dma_channel_enable</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, gd32f4xx_dma.o(i.dma_channel_enable))
+<P><STRONG><a name="[a9]"></a>dma_channel_enable</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, gd32f4xx_dma.o(i.dma_channel_enable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = dma_channel_enable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_dmaRX
 </UL>
 
-<P><STRONG><a name="[b6]"></a>dma_channel_subperipheral_select</STRONG> (Thumb, 38 bytes, Stack size 12 bytes, gd32f4xx_dma.o(i.dma_channel_subperipheral_select))
+<P><STRONG><a name="[b7]"></a>dma_channel_subperipheral_select</STRONG> (Thumb, 38 bytes, Stack size 12 bytes, gd32f4xx_dma.o(i.dma_channel_subperipheral_select))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = dma_channel_subperipheral_select
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
 </UL>
 
-<P><STRONG><a name="[a6]"></a>dma_deinit</STRONG> (Thumb, 166 bytes, Stack size 8 bytes, gd32f4xx_dma.o(i.dma_deinit))
+<P><STRONG><a name="[a7]"></a>dma_deinit</STRONG> (Thumb, 166 bytes, Stack size 8 bytes, gd32f4xx_dma.o(i.dma_deinit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = dma_deinit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_dmaRX
 </UL>
 
-<P><STRONG><a name="[b5]"></a>dma_single_data_mode_init</STRONG> (Thumb, 340 bytes, Stack size 16 bytes, gd32f4xx_dma.o(i.dma_single_data_mode_init))
+<P><STRONG><a name="[b6]"></a>dma_single_data_mode_init</STRONG> (Thumb, 340 bytes, Stack size 16 bytes, gd32f4xx_dma.o(i.dma_single_data_mode_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = dma_single_data_mode_init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
 </UL>
 
-<P><STRONG><a name="[b4]"></a>dma_single_data_para_struct_init</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, gd32f4xx_dma.o(i.dma_single_data_para_struct_init))
-<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
+<P><STRONG><a name="[b5]"></a>dma_single_data_para_struct_init</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, gd32f4xx_dma.o(i.dma_single_data_para_struct_init))
+<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
 </UL>
 
-<P><STRONG><a name="[a4]"></a>dma_transfer_number_get</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f4xx_dma.o(i.dma_transfer_number_get))
+<P><STRONG><a name="[a5]"></a>dma_transfer_number_get</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f4xx_dma.o(i.dma_transfer_number_get))
 <BR><BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_dmaRX
 </UL>
 
@@ -898,22 +899,22 @@ Global Symbols
 <P><STRONG><a name="[6a]"></a>fputc</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, uart.o(i.fputc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = fputc &rArr; usart_flag_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_flag_get
-<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_flag_clear
-<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_data_transmit
+<BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_flag_get
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_flag_clear
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_data_transmit
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> printf3.o(i.__0printf$3)
 </UL>
-<P><STRONG><a name="[91]"></a>gpio_af_set</STRONG> (Thumb, 94 bytes, Stack size 20 bytes, gd32f4xx_gpio.o(i.gpio_af_set))
+<P><STRONG><a name="[92]"></a>gpio_af_set</STRONG> (Thumb, 94 bytes, Stack size 20 bytes, gd32f4xx_gpio.o(i.gpio_af_set))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = gpio_af_set
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_io_init
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_io_init
 </UL>
 
-<P><STRONG><a name="[be]"></a>gpio_bit_write</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f4xx_gpio.o(i.gpio_bit_write))
-<BR><BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_on
-<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_off
+<P><STRONG><a name="[bf]"></a>gpio_bit_write</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f4xx_gpio.o(i.gpio_bit_write))
+<BR><BR>[Called By]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_on
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_off
 </UL>
 
 <P><STRONG><a name="[79]"></a>gpio_input_bit_get</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f4xx_gpio.o(i.gpio_input_bit_get))
@@ -921,66 +922,66 @@ Global Symbols
 <LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI10_15_IRQHandler
 </UL>
 
-<P><STRONG><a name="[8f]"></a>gpio_mode_set</STRONG> (Thumb, 78 bytes, Stack size 20 bytes, gd32f4xx_gpio.o(i.gpio_mode_set))
+<P><STRONG><a name="[90]"></a>gpio_mode_set</STRONG> (Thumb, 78 bytes, Stack size 20 bytes, gd32f4xx_gpio.o(i.gpio_mode_set))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = gpio_mode_set
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_io_init
-<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_io_init
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
 </UL>
 
-<P><STRONG><a name="[c1]"></a>gpio_output_bit_get</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f4xx_gpio.o(i.gpio_output_bit_get))
-<BR><BR>[Called By]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_status
+<P><STRONG><a name="[c2]"></a>gpio_output_bit_get</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f4xx_gpio.o(i.gpio_output_bit_get))
+<BR><BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_status
 </UL>
 
-<P><STRONG><a name="[90]"></a>gpio_output_options_set</STRONG> (Thumb, 66 bytes, Stack size 20 bytes, gd32f4xx_gpio.o(i.gpio_output_options_set))
+<P><STRONG><a name="[91]"></a>gpio_output_options_set</STRONG> (Thumb, 66 bytes, Stack size 20 bytes, gd32f4xx_gpio.o(i.gpio_output_options_set))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = gpio_output_options_set
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_io_init
-<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_io_init
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
 </UL>
 
-<P><STRONG><a name="[bc]"></a>led_init</STRONG> (Thumb, 132 bytes, Stack size 8 bytes, led.o(i.led_init))
+<P><STRONG><a name="[bd]"></a>led_init</STRONG> (Thumb, 132 bytes, Stack size 8 bytes, led.o(i.led_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = led_init &rArr; gpio_output_options_set
 </UL>
-<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_output_options_set
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_mode_set
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
+<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_output_options_set
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_mode_set
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
 </UL>
 <BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[bd]"></a>led_off</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, led.o(i.led_off))
+<P><STRONG><a name="[be]"></a>led_off</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, led.o(i.led_off))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = led_off
 </UL>
-<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_write
+<BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_write
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_switch
+<BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_switch
 </UL>
 
-<P><STRONG><a name="[bf]"></a>led_on</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, led.o(i.led_on))
+<P><STRONG><a name="[c0]"></a>led_on</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, led.o(i.led_on))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = led_on
 </UL>
-<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_write
+<BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_write
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_switch
+<BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_switch
 </UL>
 
-<P><STRONG><a name="[c0]"></a>led_status</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, led.o(i.led_status))
+<P><STRONG><a name="[c1]"></a>led_status</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, led.o(i.led_status))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = led_status
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_output_bit_get
+<BR>[Calls]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_output_bit_get
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_switch
+<BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_switch
 </UL>
 
-<P><STRONG><a name="[c2]"></a>led_switch</STRONG> (Thumb, 122 bytes, Stack size 8 bytes, led.o(i.led_switch))
+<P><STRONG><a name="[c3]"></a>led_switch</STRONG> (Thumb, 122 bytes, Stack size 8 bytes, led.o(i.led_switch))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = led_switch &rArr; led_status
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_status
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_on
-<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_off
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_status
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_on
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_off
 </UL>
 <BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -988,204 +989,208 @@ Global Symbols
 <P><STRONG><a name="[63]"></a>main</STRONG> (Thumb, 92 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 172<LI>Call Chain = main &rArr; bsp_uart_init &rArr; bsp_uart_init_ &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_priority_group_set
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_auto_track
-<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;systick_config
-<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1ms
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_priority_group_set
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_auto_track
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;systick_config
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_1ms
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bluetooth_init
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_print_set
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_init
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;testFlag_get
-<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_switch
-<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_print_set
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_init
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;testFlag_get
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_switch
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
-<P><STRONG><a name="[b3]"></a>nvic_irq_enable</STRONG> (Thumb, 186 bytes, Stack size 24 bytes, gd32f4xx_misc.o(i.nvic_irq_enable))
+<P><STRONG><a name="[b4]"></a>nvic_irq_enable</STRONG> (Thumb, 186 bytes, Stack size 24 bytes, gd32f4xx_misc.o(i.nvic_irq_enable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = nvic_irq_enable
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_priority_group_set
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_priority_group_set
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
 </UL>
 
-<P><STRONG><a name="[c4]"></a>nvic_priority_group_set</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f4xx_misc.o(i.nvic_priority_group_set))
-<BR><BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_irq_enable
+<P><STRONG><a name="[c5]"></a>nvic_priority_group_set</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f4xx_misc.o(i.nvic_priority_group_set))
+<BR><BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_irq_enable
 <LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[cb]"></a>rcu_clock_freq_get</STRONG> (Thumb, 264 bytes, Stack size 84 bytes, gd32f4xx_rcu.o(i.rcu_clock_freq_get))
+<P><STRONG><a name="[cc]"></a>rcu_clock_freq_get</STRONG> (Thumb, 264 bytes, Stack size 84 bytes, gd32f4xx_rcu.o(i.rcu_clock_freq_get))
 <BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = rcu_clock_freq_get
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_baudrate_set
+<BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_baudrate_set
 </UL>
 
-<P><STRONG><a name="[8e]"></a>rcu_periph_clock_enable</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, gd32f4xx_rcu.o(i.rcu_periph_clock_enable))
-<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_init
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_io_init
-<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
+<P><STRONG><a name="[8f]"></a>rcu_periph_clock_enable</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, gd32f4xx_rcu.o(i.rcu_periph_clock_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_init
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_io_init
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
 </UL>
 
-<P><STRONG><a name="[97]"></a>rcu_timer_clock_prescaler_config</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, gd32f4xx_rcu.o(i.rcu_timer_clock_prescaler_config))
-<BR><BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_init
+<P><STRONG><a name="[98]"></a>rcu_timer_clock_prescaler_config</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, gd32f4xx_rcu.o(i.rcu_timer_clock_prescaler_config))
+<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_init
 </UL>
 
-<P><STRONG><a name="[c3]"></a>systick_config</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, systick.o(i.systick_config))
+<P><STRONG><a name="[c4]"></a>systick_config</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, systick.o(i.systick_config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = systick_config &rArr; NVIC_SetPriority
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_SetPriority
+<BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_SetPriority
 </UL>
 <BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[c7]"></a>task_auto_track</STRONG> (Thumb, 832 bytes, Stack size 8 bytes, auto_track.o(i.task_auto_track))
+<P><STRONG><a name="[c8]"></a>task_auto_track</STRONG> (Thumb, 842 bytes, Stack size 8 bytes, auto_track.o(i.task_auto_track))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = task_auto_track &rArr; car_forward_2 &rArr; car_stop &rArr; bsp_pwm_dutyRatio_edit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_2
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward_2
 <LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_forward
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;car_brake
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_tracking_flag
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_tracking_flag
 </UL>
 <BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[c6]"></a>testFlag_get</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, test.o(i.testFlag_get))
+<P><STRONG><a name="[8d]"></a>task_auto_track_switch_set</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, auto_track.o(i.task_auto_track_switch_set))
+<BR><BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bluetooth_msg_handler
+</UL>
+
+<P><STRONG><a name="[c7]"></a>testFlag_get</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, test.o(i.testFlag_get))
 <BR><BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[9b]"></a>timer_auto_reload_shadow_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f4xx_timer.o(i.timer_auto_reload_shadow_enable))
-<BR><BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_init
+<P><STRONG><a name="[9c]"></a>timer_auto_reload_shadow_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f4xx_timer.o(i.timer_auto_reload_shadow_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_init
 </UL>
 
-<P><STRONG><a name="[9d]"></a>timer_channel_output_config</STRONG> (Thumb, 484 bytes, Stack size 8 bytes, gd32f4xx_timer.o(i.timer_channel_output_config))
+<P><STRONG><a name="[9e]"></a>timer_channel_output_config</STRONG> (Thumb, 484 bytes, Stack size 8 bytes, gd32f4xx_timer.o(i.timer_channel_output_config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = timer_channel_output_config
 </UL>
-<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_output_init
+<BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_output_init
 </UL>
 
-<P><STRONG><a name="[9e]"></a>timer_channel_output_mode_config</STRONG> (Thumb, 90 bytes, Stack size 0 bytes, gd32f4xx_timer.o(i.timer_channel_output_mode_config))
-<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_output_init
+<P><STRONG><a name="[9f]"></a>timer_channel_output_mode_config</STRONG> (Thumb, 90 bytes, Stack size 0 bytes, gd32f4xx_timer.o(i.timer_channel_output_mode_config))
+<BR><BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_output_init
 </UL>
 
-<P><STRONG><a name="[93]"></a>timer_channel_output_pulse_value_config</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, gd32f4xx_timer.o(i.timer_channel_output_pulse_value_config))
-<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_output_init
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_dutyRatio_edit
+<P><STRONG><a name="[94]"></a>timer_channel_output_pulse_value_config</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, gd32f4xx_timer.o(i.timer_channel_output_pulse_value_config))
+<BR><BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_output_init
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_pwm_dutyRatio_edit
 </UL>
 
-<P><STRONG><a name="[9f]"></a>timer_channel_output_shadow_config</STRONG> (Thumb, 90 bytes, Stack size 0 bytes, gd32f4xx_timer.o(i.timer_channel_output_shadow_config))
-<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_output_init
+<P><STRONG><a name="[a0]"></a>timer_channel_output_shadow_config</STRONG> (Thumb, 90 bytes, Stack size 0 bytes, gd32f4xx_timer.o(i.timer_channel_output_shadow_config))
+<BR><BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_output_init
 </UL>
 
-<P><STRONG><a name="[9c]"></a>timer_channel_output_struct_para_init</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f4xx_timer.o(i.timer_channel_output_struct_para_init))
-<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_output_init
+<P><STRONG><a name="[9d]"></a>timer_channel_output_struct_para_init</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f4xx_timer.o(i.timer_channel_output_struct_para_init))
+<BR><BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_output_init
 </UL>
 
-<P><STRONG><a name="[9a]"></a>timer_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f4xx_timer.o(i.timer_enable))
-<BR><BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_init
+<P><STRONG><a name="[9b]"></a>timer_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f4xx_timer.o(i.timer_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_init
 </UL>
 
-<P><STRONG><a name="[99]"></a>timer_init</STRONG> (Thumb, 122 bytes, Stack size 0 bytes, gd32f4xx_timer.o(i.timer_init))
-<BR><BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_init
+<P><STRONG><a name="[9a]"></a>timer_init</STRONG> (Thumb, 122 bytes, Stack size 0 bytes, gd32f4xx_timer.o(i.timer_init))
+<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_init
 </UL>
 
-<P><STRONG><a name="[98]"></a>timer_struct_para_init</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, gd32f4xx_timer.o(i.timer_struct_para_init))
-<BR><BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_init
+<P><STRONG><a name="[99]"></a>timer_struct_para_init</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, gd32f4xx_timer.o(i.timer_struct_para_init))
+<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_timer_init
 </UL>
 
-<P><STRONG><a name="[ab]"></a>usart_baudrate_set</STRONG> (Thumb, 224 bytes, Stack size 32 bytes, gd32f4xx_usart.o(i.usart_baudrate_set))
+<P><STRONG><a name="[ac]"></a>usart_baudrate_set</STRONG> (Thumb, 224 bytes, Stack size 32 bytes, gd32f4xx_usart.o(i.usart_baudrate_set))
 <BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = usart_baudrate_set &rArr; rcu_clock_freq_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_clock_freq_get
+<BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_clock_freq_get
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
 </UL>
 
-<P><STRONG><a name="[a1]"></a>usart_data_receive</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f4xx_usart.o(i.usart_data_receive))
+<P><STRONG><a name="[a2]"></a>usart_data_receive</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f4xx_usart.o(i.usart_data_receive))
 <BR><BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_dmaRX
 </UL>
 
-<P><STRONG><a name="[ba]"></a>usart_data_transmit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gd32f4xx_usart.o(i.usart_data_transmit))
+<P><STRONG><a name="[bb]"></a>usart_data_transmit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gd32f4xx_usart.o(i.usart_data_transmit))
 <BR><BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
 </UL>
 
-<P><STRONG><a name="[b7]"></a>usart_dma_receive_config</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, gd32f4xx_usart.o(i.usart_dma_receive_config))
-<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
+<P><STRONG><a name="[b8]"></a>usart_dma_receive_config</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, gd32f4xx_usart.o(i.usart_dma_receive_config))
+<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
 </UL>
 
-<P><STRONG><a name="[af]"></a>usart_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f4xx_usart.o(i.usart_enable))
-<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
+<P><STRONG><a name="[b0]"></a>usart_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f4xx_usart.o(i.usart_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
 </UL>
 
-<P><STRONG><a name="[bb]"></a>usart_flag_clear</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, gd32f4xx_usart.o(i.usart_flag_clear))
+<P><STRONG><a name="[bc]"></a>usart_flag_clear</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, gd32f4xx_usart.o(i.usart_flag_clear))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usart_flag_clear
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
 </UL>
 
-<P><STRONG><a name="[b9]"></a>usart_flag_get</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, gd32f4xx_usart.o(i.usart_flag_get))
+<P><STRONG><a name="[ba]"></a>usart_flag_get</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, gd32f4xx_usart.o(i.usart_flag_get))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usart_flag_get
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
 </UL>
 
-<P><STRONG><a name="[b2]"></a>usart_interrupt_enable</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, gd32f4xx_usart.o(i.usart_interrupt_enable))
+<P><STRONG><a name="[b3]"></a>usart_interrupt_enable</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, gd32f4xx_usart.o(i.usart_interrupt_enable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usart_interrupt_enable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
 </UL>
 
-<P><STRONG><a name="[a9]"></a>usart_interrupt_flag_clear</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, gd32f4xx_usart.o(i.usart_interrupt_flag_clear))
+<P><STRONG><a name="[aa]"></a>usart_interrupt_flag_clear</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, gd32f4xx_usart.o(i.usart_interrupt_flag_clear))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usart_interrupt_flag_clear
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_dmaRX
 </UL>
 
-<P><STRONG><a name="[a0]"></a>usart_interrupt_flag_get</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, gd32f4xx_usart.o(i.usart_interrupt_flag_get))
+<P><STRONG><a name="[a1]"></a>usart_interrupt_flag_get</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, gd32f4xx_usart.o(i.usart_interrupt_flag_get))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = usart_interrupt_flag_get
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_dmaRX
 </UL>
 
-<P><STRONG><a name="[ac]"></a>usart_parity_config</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f4xx_usart.o(i.usart_parity_config))
-<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
+<P><STRONG><a name="[ad]"></a>usart_parity_config</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f4xx_usart.o(i.usart_parity_config))
+<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
 </UL>
 
-<P><STRONG><a name="[b1]"></a>usart_receive_config</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f4xx_usart.o(i.usart_receive_config))
-<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
+<P><STRONG><a name="[b2]"></a>usart_receive_config</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f4xx_usart.o(i.usart_receive_config))
+<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
 </UL>
 
-<P><STRONG><a name="[ae]"></a>usart_stop_bit_set</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f4xx_usart.o(i.usart_stop_bit_set))
-<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
+<P><STRONG><a name="[af]"></a>usart_stop_bit_set</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f4xx_usart.o(i.usart_stop_bit_set))
+<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
 </UL>
 
-<P><STRONG><a name="[b0]"></a>usart_transmit_config</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f4xx_usart.o(i.usart_transmit_config))
-<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
+<P><STRONG><a name="[b1]"></a>usart_transmit_config</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f4xx_usart.o(i.usart_transmit_config))
+<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
 </UL>
 
-<P><STRONG><a name="[ad]"></a>usart_word_length_set</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f4xx_usart.o(i.usart_word_length_set))
-<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
+<P><STRONG><a name="[ae]"></a>usart_word_length_set</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f4xx_usart.o(i.usart_word_length_set))
+<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_uart_init_
 </UL>
 <P>
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[c9]"></a>NVIC_SetPriority</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, systick.o(i.NVIC_SetPriority))
+<P><STRONG><a name="[ca]"></a>NVIC_SetPriority</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, systick.o(i.NVIC_SetPriority))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = NVIC_SetPriority
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;systick_config
+<BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;systick_config
 </UL>
 
-<P><STRONG><a name="[c8]"></a>system_clock_240m_irc16m</STRONG> (Thumb, 238 bytes, Stack size 0 bytes, system_gd32f4xx.o(i.system_clock_240m_irc16m))
+<P><STRONG><a name="[c9]"></a>system_clock_240m_irc16m</STRONG> (Thumb, 238 bytes, Stack size 0 bytes, system_gd32f4xx.o(i.system_clock_240m_irc16m))
 <BR><BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_clock_config
 </UL>
 
 <P><STRONG><a name="[7c]"></a>system_clock_config</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, system_gd32f4xx.o(i.system_clock_config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = system_clock_config
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_clock_240m_irc16m
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_clock_240m_irc16m
 </UL>
 <BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>
