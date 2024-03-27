@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"path": "../"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"gd32f4xx.h": "c",
+			"led.h": "c",
+			"systick.h": "c",
+			"gd32f4xx_rcu.h": "c",
+			"pwm.h": "c",
+			"gd32f4xx_timer.h": "c",
+			"gd32f4xx_gpio.h": "c",
+			"test.h": "c",
+			"car.h": "c",
+			"stdio.h": "c",
+			"uart.h": "c",
+			"gd32f4xx_usart.h": "c",
+			"string.h": "c",
+			"system_gd32f4xx.h": "c",
+			"bluetooth.h": "c",
+			"tracking.h": "c",
+			"gd32f4xx_libopt.h": "c",
+			"gd32f4xx_pmu.h": "c",
+			"auto_track.h": "c"
+		}
+	}
+}
