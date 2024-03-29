@@ -2,5 +2,6 @@
 *.log.lock
 Project/.vscode/uv4.log
 Project/.vscode/uv4.log.lock
-Project/Listings
-Project/Objects
+Project/Listings/
+Project/Objects/
+Project/.vscode/keil-assistant.log

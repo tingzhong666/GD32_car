@@ -24,7 +24,12 @@
 			"tracking.h": "c",
 			"gd32f4xx_libopt.h": "c",
 			"gd32f4xx_pmu.h": "c",
-			"auto_track.h": "c"
+			"auto_track.h": "c",
+			"ultrasonic.h": "c",
+			"obstaclevoidance.h": "c",
+			"delay_1us.h": "c",
+			"stdint.h": "c",
+			"gd32f4xx_it.h": "c"
 		}
 	}
 }

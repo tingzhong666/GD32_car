@@ -36,13 +36,17 @@ OF SUCH DAMAGE.
 #include "systick.h"
 #include <stdio.h>
 #include "main.h"
-#include "led.h"
 #include "test.h"
+//  == bsp
+#include "led.h"
 #include "pwm.h"
-#include "car.h"
 #include "uart.h"
+#include "ultrasonic.h"
+//  == app
+#include "car.h"
 #include "bluetooth.h"
 #include "auto_track.h"
+#include <obstacleVoidance.h>
 
 int main(void)
 {
@@ -58,10 +62,6 @@ int main(void)
 
     bsp_pwm_init();
     // 80%以上才能动 折算为4V 实际3.7V 0.3的误差
-    // bsp_pwm_dutyRatio_edit(pwm1, 80);
-    // bsp_pwm_dutyRatio_edit(pwm2, 80);
-    // bsp_pwm_dutyRatio_edit(pwm3, 80);
-    // bsp_pwm_dutyRatio_edit(pwm4, 80);
 
     bsp_uart_init();
     bsp_uart_print_set(usart0);
@@ -70,27 +70,30 @@ int main(void)
     bsp_uart_print_set(usart2);
     printf("mcu debug bluetooth test\n");
 
+    bsp_ultrasonic_init();
     // ==== APP
-    // car_forward(80);
-    // car_backward(80);
-    // car_left(80);
-    // car_right(80);
     bluetooth_init();
+    // task_auto_track_switch_set(SET); // 自动寻迹开关
     while (1)
     {
+
         // led_switch(led1);
         // delay_1ms(1000);
-        led_switch(led2);
-        delay_1ms(100);
+        // led_switch(led2);
+        // delay_1ms(100);
         // led_switch(led3);
         // delay_1ms(1000);
         // led_switch(led4);
         // delay_1ms(1000);
-        if (testFlag_get() == SET)
-        {
-            led_switch(led1);
-            delay_1ms(100);
-        }
+        // if (testFlag_get() == SET)
+        // {
+        //     led_switch(led1);
+        //     delay_1ms(100);
+        // }
+        // ==bsp
+        bsp_ultrasonic_rec_task();
+        // ==app
         task_auto_track();
+        task_obstacleVoidance();
     }
 }

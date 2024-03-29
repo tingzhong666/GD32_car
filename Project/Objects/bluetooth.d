@@ -46,3 +46,5 @@
 .\objects\bluetooth.o: D:\apps\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\bluetooth.o: D:\apps\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\bluetooth.o: ..\Hardware\test.h
+.\objects\bluetooth.o: ..\User\auto_track.h
+.\objects\bluetooth.o: ..\Hardware\tracking.h

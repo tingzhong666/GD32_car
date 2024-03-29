@@ -3,16 +3,16 @@
         {
             "name": "Target 1",
             "includePath": [
-                "d:\\development\\workspace\\vscode.keil5\\GD32_car\\User",
-                "d:\\development\\workspace\\vscode.keil5\\GD32_car\\Firmware\\CMSIS",
-                "d:\\development\\workspace\\vscode.keil5\\GD32_car\\Firmware\\CMSIS\\GD\\GD32F4xx\\Include",
-                "d:\\development\\workspace\\vscode.keil5\\GD32_car\\Firmware\\GD32F4xx_standard_peripheral\\Include",
-                "d:\\development\\workspace\\vscode.keil5\\GD32_car\\Hardware",
+                "d:\\development\\workspace_code\\vscode.keil5\\GD32_car\\User",
+                "d:\\development\\workspace_code\\vscode.keil5\\GD32_car\\Firmware\\CMSIS",
+                "d:\\development\\workspace_code\\vscode.keil5\\GD32_car\\Firmware\\CMSIS\\GD\\GD32F4xx\\Include",
+                "d:\\development\\workspace_code\\vscode.keil5\\GD32_car\\Firmware\\GD32F4xx_standard_peripheral\\Include",
+                "d:\\development\\workspace_code\\vscode.keil5\\GD32_car\\Hardware",
                 "D:\\apps\\Keil_v5\\ARM\\ARMCC\\include",
                 "D:\\apps\\Keil_v5\\ARM\\ARMCC\\include\\rw",
-                "d:\\development\\workspace\\vscode.keil5\\GD32_car\\Firmware\\GD32F4xx_standard_peripheral\\Source",
-                "d:\\development\\workspace\\vscode.keil5\\GD32_car\\Firmware\\CMSIS\\GD\\GD32F4xx\\Source",
-                "d:\\development\\workspace\\vscode.keil5\\GD32_car\\Firmware\\CMSIS\\GD\\GD32F4xx\\Source\\ARM"
+                "d:\\development\\workspace_code\\vscode.keil5\\GD32_car\\Firmware\\GD32F4xx_standard_peripheral\\Source",
+                "d:\\development\\workspace_code\\vscode.keil5\\GD32_car\\Firmware\\CMSIS\\GD\\GD32F4xx\\Source",
+                "d:\\development\\workspace_code\\vscode.keil5\\GD32_car\\Firmware\\CMSIS\\GD\\GD32F4xx\\Source\\ARM"
             ],
             "defines": [
                 "GD32F470",

@@ -451,6 +451,11 @@
               <FileType>1</FileType>
               <FilePath>..\Hardware\tracking.c</FilePath>
             </File>
+            <File>
+              <FileName>ultrasonic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\ultrasonic.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -485,6 +490,11 @@
               <FileName>auto_track.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\auto_track.c</FilePath>
+            </File>
+            <File>
+              <FileName>obstacleVoidance.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\obstacleVoidance.c</FilePath>
             </File>
           </Files>
         </Group>

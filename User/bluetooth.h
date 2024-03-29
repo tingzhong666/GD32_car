@@ -16,6 +16,7 @@ extern "C"
 #include "uart.h"
 #include "string.h"
 #include "test.h"
+#include <auto_track.h>
 
     void bluetooth_init(void);
 

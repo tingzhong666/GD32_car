@@ -41,12 +41,14 @@
 .\objects\main.o: ..\User\systick.h
 .\objects\main.o: D:\apps\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: ..\User\main.h
-.\objects\main.o: ..\Hardware\led.h
 .\objects\main.o: ..\Hardware\test.h
+.\objects\main.o: ..\Hardware\led.h
 .\objects\main.o: ..\Hardware\pwm.h
-.\objects\main.o: ..\User\car.h
 .\objects\main.o: ..\Hardware\uart.h
 .\objects\main.o: D:\apps\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\main.o: ..\Hardware\ultrasonic.h
+.\objects\main.o: ..\User\car.h
 .\objects\main.o: ..\User\bluetooth.h
 .\objects\main.o: ..\User\auto_track.h
 .\objects\main.o: ..\Hardware\tracking.h
+.\objects\main.o: ..\User\obstacleVoidance.h
